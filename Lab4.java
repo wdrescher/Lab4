@@ -42,13 +42,13 @@ public class Lab4 {
                         throw new IllegalArgumentException();
                 }
 
-                if ( ! (input.length < 1) ) {
+                if (input.length <= 1) {
                         return input;
                 }
 
                 for (int i = 0; i < input.length; i++ ) {
                         for ( int k = 0; k < input.length; k++ ) {
-                                if ( input[i] > input[k] ) {
+                                if ( input[i] < input[k] ) {
                                         int temp = input[i];
                                         input[i] = input[k];
                                         input[k] = temp;
@@ -59,6 +59,12 @@ public class Lab4 {
         }
         
         public static void printSort(int [] input) {
+        	printArr(input); 
+        	printArr(sort(input)); 
+        }
+       
+        
+        public static void printArr(int [] input) {
         	String output = "{"; 
         	for (int e : input) {
         		output += e +", "; 
