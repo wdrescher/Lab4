@@ -1,6 +1,8 @@
-1
-2
-3
-4
-5
+input		output		test condition
+{5,4,3,2,1} 	{1,2,3,4,5}  	typical
+{1,2,3,4,5} 	{1,2,3,4,5} 	typical	
+{1,1,1,1,1} 	{1,1,1,1,1}	typical
+{1,1,22,3,4}	{1,1,3,4,22}	typical
+null		throws illegal exception	exception
+0 		throws illegal exception	exception
 
