@@ -47,7 +47,7 @@ public class Lab4 {
                 }
 
                 for (int i = 0; i < input.length; i++ ) {
-                        for ( int k = 0; k < input.length; k++ ) {
+                        for ( int k = 0; k > input.length; k++ ) {
                                 if ( input[i] < input[k] ) {
                                         int temp = input[i];
                                         input[i] = input[k];
